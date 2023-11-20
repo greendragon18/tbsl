@@ -6,31 +6,42 @@
     <title>Votre Page One Page</title>
     <!-- Inclure le lien vers le fichier CSS de Tailwind -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Inclure le lien vers votre fichier CSS personnalisé -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100 font-sans">
 
-<!-- Header Section -->
-<header class="bg-blue-500 text-white text-center py-10">
-    <h1 class="text-4xl font-bold">Votre Titre</h1>
-    <p class="mt-2">Description courte de votre page</p>
-</header>
+    <!-- Header Section -->
+    <header>
+        <!-- Menu Links -->
+        <nav>
+            <ul>
+                <li><a href="#" class="hover:underline">Accueil</a></li>
+                <li><a href="#" class="hover:underline">À Propos</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Logo Centered -->
+        <div class="logo">Votre Logo</div>
+    </header>
 
-<!-- Content Section -->
-<section class="container mx-auto my-10">
-    <h2 class="text-2xl font-bold mb-4">Section 1</h2>
-    <p>Votre contenu ici...</p>
-</section>
+    <!-- Content Section -->
+    <section class="container mx-auto my-10">
+        <h2 class="text-2xl font-bold mb-4">Section 1</h2>
+        <p>Votre contenu ici...</p>
+    </section>
 
-<!-- Another Section -->
-<section class="container mx-auto my-10">
-    <h2 class="text-2xl font-bold mb-4">Section 2</h2>
-    <p>Plus de contenu...</p>
-</section>
+    <!-- Another Section -->
+    <section class="container mx-auto my-10">
+        <h2 class="text-2xl font-bold mb-4">Section 2</h2>
+        <p>Plus de contenu...</p>
+    </section>
 
-<!-- Footer Section -->
-<footer class="bg-gray-800 text-white text-center py-5">
-    <p>&copy; 2023 Votre Nom</p>
-</footer>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Votre Nom</p>
+    </footer>
 
 </body>
 </html>
