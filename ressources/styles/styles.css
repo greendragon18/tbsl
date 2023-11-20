@@ -41,6 +41,9 @@ nav a:hover {
 }
 
  body {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
      background-image: url('../img/background.jpg');
      background-size: cover;
  }
