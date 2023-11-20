@@ -40,8 +40,14 @@ nav a:hover {
     padding: 0 1rem;
 }
 
+ body {
+     background-image: url('../img/background.jpg');
+     background-size: cover;
+ }
+
 /* Footer Styles */
 footer {
+    margin-top: auto;
     background-color: #333;
     color: white;
     text-align: center;
