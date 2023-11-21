@@ -2,12 +2,21 @@
 
 /* Header Styles */
 header {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #F9AD59;
     color: white;
-    padding: 1rem;
+    z-index: 1000;
+}
+
+
+nav {
+    width: 200px;
 }
 
 nav ul {
@@ -16,7 +25,7 @@ nav ul {
 }
 
 nav a {
-    color: #3C2C32;
+    color: white;
     margin-right: 1rem;
     text-decoration: none;
 }
@@ -28,9 +37,18 @@ nav a:hover {
 /* Logo Styles */
 .logo {
     text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 0;
     color: #3C2C32;
+}
+
+.logo img {
+    width: 120px; /* Ajustez la largeur selon vos besoins */
+    height: 120px; /* Ajustez la hauteur selon vos besoins */
+    margin: 0; /* Réinitialise la marge du logo */
+}
+
+.menuDroite{
+    width: 200px;
 }
 
 /* Content Section Styles */
@@ -40,20 +58,26 @@ nav a:hover {
     padding: 0 1rem;
 }
 
- body {
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;
-     background-image: url('../img/background.jpg');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
- }
+
+.contIMG
+{
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
 
 /* Footer Styles */
 footer {
     margin-top: auto;
-    background-color: #333;
+    background-color: #F9AD59;
     color: white;
     text-align: center;
     padding: 1rem;
