@@ -15,17 +15,43 @@
     <!-- Header Section -->
     <header>
             <!-- Menu Links -->
-            <nav>
-                <ul>
+        <div class="header">
+
+            <div class="smartphoneLeftMenu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
                     <li><a href="#" class="hover:underline">TBSL</a></li>
                     <li><a href="#" class="hover:underline">La suite</a></li>
                     <li><a href="#" class="hover:underline">Contact</a></li>
                 </ul>
-            </nav>
-            
-            <!-- Logo Centered -->
-            <div class="logo"><img src="./ressources/img/tbsl_logo.png" alt="tbsl logo"></div>
-            <div class="menuDroite" ></div>
+            </div>
+
+            <div class="leftMenu">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="hover:underline">TBSL</a></li>
+                        <li><a href="#" class="hover:underline">La suite</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="centerMenu">
+                <img src="./ressources/img/tbsl_logo.png" alt="tbsl logo">
+            </div>
+
+            <div class="rightMenu">
+                <nav>
+                    <ul>
+                        <li><a href="mailto:info@tbsl.ch">Contact nous</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
 
     </header>
     <!-- Image principale -->
@@ -53,7 +79,7 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 Association Trail Blonay - St-Légier</p>
-        
+
           <div class="rounded-social-buttons">
                     <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
