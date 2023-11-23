@@ -7,10 +7,13 @@
     position: fixed;
     display: flex;
     width: 100%;
+    top: 0;
+    left: 0;
     justify-content: space-between;
-    /* space-between | space-around | space-evenly | stretch*/
+    align-items: center;
     background-color: #F9AD59;
     color: white;
+    z-index: 1000;
 }
 
 /*nav {*/
@@ -211,9 +214,6 @@
     }
 }
 
-
-
-
 /* Logo Styles */
 .centerMenu {
     text-align: center;
@@ -236,6 +236,8 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 0 1rem;
+    scroll-margin-top: 150px; /* Ajustez la valeur en fonction de la hauteur de votre header */
+    scroll-behavior: smooth;
 }
 
 
@@ -251,7 +253,6 @@
     background-repeat: no-repeat;
 
 }
-
 
 
 /* Footer Styles */
