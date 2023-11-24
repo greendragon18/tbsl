@@ -9,20 +9,28 @@
     width: 100%;
     top: 0;
     left: 0;
+    height: 120px;
     justify-content: space-between;
-    align-items: center;
     background-color: #F9AD59;
     color: white;
     z-index: 1000;
 }
 
-/*nav {*/
-/*    !*width: 200px;*!*/
-/*    !*display: flex;*!*/
-/*    !*justify-content: space-between;*!*/
-/*}*/
 
 @media all and (max-width: 959px) {
+    .menuAll{
+        position: fixed;
+        display: flex;
+        width: 100%;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F9AD59;
+        color: white;
+        z-index: 1000;
+    }
+
     .leftMenu {
         display: none;
     }
@@ -34,17 +42,6 @@
     .centerMenu {
         margin-right: 10px;
     }
-
-    /*.centerMenu {*/
-    /*    display: none;*/
-    /*}*/
-    /*.menu {*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*    list-style-type: none;*/
-    /*    margin-top: 50px;*/
-    /*    padding: 0;*/
-    /*}*/
 
     .menu > li {
         margin: 0 1rem;
@@ -151,26 +148,20 @@
         align-items: center;
     }
 }
-/* Je mets en commentaire car je pense pas que ca soit nécessaire ? 
 
-@media all and (min-width:960px) and (max-width: 1024px) {
-
-    .smartphoneLeftMenu {
-        display: none;
-    }
-
-    .leftMenu {
-        margin-left: 50px;
-    }
-
-    .rightMenu {
-        margin-right: 50px;
-    }
-}*/
 
 @media all and (min-width:960px) {
+
     .smartphoneLeftMenu {
         display: none;
+    }
+
+    .menuAll {
+    display: flex;
+    width: 800px;
+    margin : auto;
+    justify-content: space-between;
+    z-index: 1000;
     }
 
 
@@ -178,12 +169,11 @@
         display: flex;
         align-items: center;
         height: 120px;
-        margin-left: 200px;
     }
 
     .rightMenu {
         height: 100%;
-        margin-right: 200px;
+        
     }
 
     /* Pour faire joli */ 
@@ -236,6 +226,7 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 0 1rem;
+    text-align: justify;
     scroll-margin-top: 150px; /* Ajustez la valeur en fonction de la hauteur de votre header */
     scroll-behavior: smooth;
 }
