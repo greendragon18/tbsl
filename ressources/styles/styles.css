@@ -245,6 +245,14 @@
 
 }
 
+a {
+    color : #F9AD59;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 /* Footer Styles */
 footer {
@@ -253,4 +261,12 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+footer a {
+    color : white;
+}
+
+footer a:hover {
+    text-decoration: none;
 }
