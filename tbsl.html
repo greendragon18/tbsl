@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association de Trail Blonay - St-Légier</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-            integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-            crossorigin="anonymous"></script>
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="./ressources/img/tbsl_logo.png" type="image/x-icon">
     <!-- Inclure le lien vers le fichier CSS de Tailwind -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <!-- Inclure le lien vers votre fichier CSS personnalisé -->
@@ -14,87 +15,89 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-<!-- Header Section -->
-<header>
-    <!-- Menu Links -->
-    <div class="header">
-        <div class="menuAll">
-            <div class="smartphoneLeftMenu">
-                <input id="menu-toggle" type="checkbox"/>
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li><a href="index.html" class="hover:underline">News</a></li>
-                    <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
-                    <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
-                </ul>
-            </div>
-
-            <div class="leftMenu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="hover:underline">News</a></li>
+    <!-- Header Section -->
+    <header>
+        <!-- Menu Links -->
+        <div class="header">
+            <div class="menuAll">
+                <div class="smartphoneLeftMenu">
+                    <input id="menu-toggle" type="checkbox"/>
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                        <li><a href="index.html" data-scroll>News</a></li>
                         <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
                         <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
 
-            <div class="centerMenu">
-                <img src="./ressources/img/tbsl_logo.png" alt="tbsl logo">
-            </div>
+                <div class="leftMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" data-scroll>News</a></li>
+                            <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
+                            <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-            <div class="rightMenu">
-                <nav>
-                    <ul>
-                        <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                    </ul>
-                </nav>
+                <div class="centerMenu">
+                    <a href="index.html">
+                        <img src="./ressources/img/tbsl_logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="rightMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
 
 
-</header>
-<!-- Image principale -->
-<section class="contIMG mx-auto my-10">
+    </header>
+    <!-- Image principale -->
+    <section class="contIMG mx-auto my-10">
 
-</section>
-<br>
-<br>
-<!-- Content Section -->
-<section class="container mx-auto my-10" id="tbsl">
+    </section>
+    <br>
+    <br>
+    <!-- Content Section -->
+    <section class="container mx-auto my-10" id="tbsl">
 
-    <h2 class="text-2xl font-bold mb-4">Qui sommes-nous ?</h2>
+        <h2 class="text-2xl font-bold mb-4">Qui sommes-nous ?</h2>
 
-    <p>Le but principal de l’association est de promouvoir la pratique de la course à pied dans un
-        milieu naturel. L’association organise une course de trail annuelle dans la région de la
-        Riviera tout en favorisant le bien-être écologique local. Notre mission consiste à créer une
-        communauté de coureurs/coureuses de trail passionnés qui partagent notre amour pour la
-        nature et notre engagement envers la préservation de l'environnement. Nous prévoyons de mener des actions
-        concrètes
+        <p>Le but principal de l’association est de promouvoir la pratique de la course à pied dans un
+            milieu naturel. L’association organise une course de trail annuelle dans la région de la
+            Riviera tout en favorisant le bien-être écologique local. Notre mission consiste à créer une
+            communauté de coureurs/coureuses de trail passionnés qui partagent notre amour pour la
+            nature et notre engagement envers la préservation de l'environnement. Nous prévoyons de mener des actions
+            concrètes
         pour contribuer à la santé écologique de la région.</p>
 
-</section>
+    </section>
 
-<br>
-<br>
+    <br>
+    <br>
 
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Association Trail Blonay - St-Légier</p>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Association Trail Blonay - St-Légier</p>
 
-    <div class="rounded-social-buttons">
-        <a class="social-button facebook"
-           href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"><i
-                class="fab fa-facebook-f"></i></a>
-        <a class="social-button youtube" href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"><i
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook"
+            href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"><i
+            class="fab fa-facebook-f"></i></a>
+            <a class="social-button youtube" href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"><i
                 class="fab fa-youtube"></i></a>
-        <a class="social-button instagram" href="https://www.instagram.com/trailblonaystlegier/" target="_blank"><i
-                class="fab fa-instagram"></i></a>
-    </div>
-</footer>
+                <a class="social-button instagram" href="https://www.instagram.com/trailblonaystlegier/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+                </div>
+            </footer>
 
-</body>
-</html>
+        </body>
+        </html>

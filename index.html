@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association de Trail Blonay - St-Légier</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-            integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-            crossorigin="anonymous"></script>
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="./ressources/img/tbsl_logo.png" type="image/x-icon">
     <!-- Inclure le lien vers le fichier CSS de Tailwind -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <!-- Inclure le lien vers votre fichier CSS personnalisé -->
@@ -14,81 +15,89 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-<!-- Header Section -->
-<header>
-    <!-- Menu Links -->
-    <div class="header">
-        <div class="menuAll">
-            <div class="smartphoneLeftMenu">
-                <input id="menu-toggle" type="checkbox"/>
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li><a href="index.html" class="hover:underline">News</a></li>
-                    <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
-                    <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
-                </ul>
-            </div>
-
-            <div class="leftMenu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="hover:underline">News</a></li>
+    <!-- Header Section -->
+    <header>
+        <!-- Menu Links -->
+        <div class="header">
+            <div class="menuAll">
+                <div class="smartphoneLeftMenu">
+                    <input id="menu-toggle" type="checkbox"/>
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                        <li><a href="index.html" data-scroll>News</a></li>
                         <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
                         <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
 
-            <div class="centerMenu">
-                <img src="./ressources/img/tbsl_logo.png" alt="tbsl logo">
-            </div>
+                <div class="leftMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" data-scroll>News</a></li>
+                            <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
+                            <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-            <div class="rightMenu">
-                <nav>
-                    <ul>
-                        <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                    </ul>
-                </nav>
+                <div class="centerMenu">
+                    <a href="index.html">
+                        <img src="./ressources/img/tbsl_logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="rightMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
 
 
-</header>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<!-- Another Section -->
-<section class="container mx-auto my-10" id="commu">
-    <h2 class="text-2xl font-bold mb-4">Les communautés trail run</h2>
-    <p>Nous proposons un run communautaire dans la région de la Riviera de façon mensuelle. Tu trouveras dans le flyer
-        ci-dessous toutes les informations importantes. Tout le monde est bienvenue, néanmoins chaque personne doit être
-        capable de courir la distance et le dénivelé indiqué dans le flyer. Merci d'utiliser ce lien pour s'inscrire :
-        <a href="https://docs.google.com/forms/d/1wxNVju3RnM49hZZ-fAY8biMKbFdo5X6yaTQ2W6XUr4w/edit?usp=drive_web">Inscription</a>.<br><br>
+    <!-- Another Section -->
+    <section class="container mx-auto my-10" id="commu">
 
+        <h2 class="text-2xl font-bold mb-4">Les communautés trail run</h2>
+
+        <img src="./ressources/img/tbsl_fev.png" alt="aPropos">
+        <br>
+
+        <p>Nous proposons un run communautaire dans la région de la Riviera de façon mensuelle. Tout le monde est bienvenue, néanmoins chaque personne doit être
+            capable de courir la distance et le dénivelé indiqué dans le flyer. Tu trouveras une récap de nos sorties <a href="commu.html">ici</a>
+            <!--Merci d'utiliser ce lien pour s'inscrire :
+            <a href="https://docs.google.com/forms/d/1zMt4E-7gXbYjl8rA4adV5FXmKKKN08qu_2w9ZAalPR4/">Inscription</a>.<br><br>-->
+        <br><br></p>
+
+        <h4 class="font-bold mb-4">Matériels :</h4>
         Concernant le matériel voici une petite liste que nous conseillons d'avoir : <br>
 
-    <ul>
-        <li>-Bonnes chaussures avec du profil (on risque d'être sur de la neige)</li>
-        <li>-Réserve d'eau</li>
-        <li>-Réserve alimentaire</li>
-        <li>-Téléphone mobile</li>
-        <li>-Vêtements adaptés à la météo</li>
-        <li>-Vêtements chauds d'après course (pour l'apéro après la course)</li>
-    </ul>
-    <br>
-    Après la sortie nous allons organiser un petit apéro afin de pouvoir échanger. Le parcours peut encore changer selon
+        <ul>
+            <li>-Bonnes chaussures avec du profil (on risque d'être sur de la neige)</li>
+            <li>-Réserve d'eau</li>
+            <li>-Réserve alimentaire</li>
+            <li>-Téléphone mobile</li>
+            <li>-Vêtements adaptés à la météo</li>
+            <li>-Vêtements chauds d'après course (pour l'apéro après la course)</li>
+        </ul>
+        <br>
+        Après la sortie nous allons organiser un petit apéro afin de pouvoir échanger. Le parcours peut encore changer selon
     les conditions météorologiques.</p><br>
-    <img src="./ressources/img/tbsl_Jan.png" alt="aPropos">
-    <br>
+    
     <p> Pour ne rien rater des prochains communautés trail run nous te conseillons de nous suivre sur les différents
-        réseaux sociaux ci-dessous dans le pied de page. </p><br>
+    réseaux sociaux ci-dessous dans le pied de page. </p><br>
 </section>
 
 <br>
@@ -100,14 +109,14 @@
 
     <div class="rounded-social-buttons">
         <a class="social-button facebook"
-           href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"><i
-                class="fab fa-facebook-f"></i></a>
+        href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"><i
+        class="fab fa-facebook-f"></i></a>
         <a class="social-button youtube" href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"><i
-                class="fab fa-youtube"></i></a>
-        <a class="social-button instagram" href="https://www.instagram.com/trailblonaystlegier/" target="_blank"><i
+            class="fab fa-youtube"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/trailblonaystlegier/" target="_blank"><i
                 class="fab fa-instagram"></i></a>
-    </div>
-</footer>
+            </div>
+        </footer>
 
-</body>
-</html>
+    </body>
+    </html>

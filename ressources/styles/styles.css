@@ -245,11 +245,11 @@
 
 }
 
-a {
+.container a {
     color : #F9AD59;
 }
 
-a:hover {
+.container a:hover {
     text-decoration: underline;
 }
 
@@ -269,4 +269,8 @@ footer a {
 
 footer a:hover {
     text-decoration: none;
+}
+
+figcaption{
+    text-align: center;
 }
