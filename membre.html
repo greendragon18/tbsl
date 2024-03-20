@@ -10,6 +10,8 @@
     <link rel="icon" href="./ressources/img/tbsl_logo.png" type="image/x-icon">
     <!-- Inclure le lien vers le fichier CSS de Tailwind -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
     <!-- Inclure le lien vers votre fichier CSS personnalisé -->
     <link rel="stylesheet" href="ressources/styles/styles.css">
 </head>
@@ -27,84 +29,123 @@
                     </label>
                     <ul class="menu">
                         <li><a href="index.html" data-scroll>News</a></li>
-                        <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
-                        <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
-                        <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                        <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+                        <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdownSmart" type="button">Commu trail run &#9660;
+                        </button>
+                        <div id="dropdownSmart" class="z-10 hidden bg-white w-full text-center">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                              <li>
+                                <a href="jan.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Janvier</a>
+                            </li>
+                            <li>
+                                <a href="fev.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Février</a>
+                            </li>
+                            <li>
+                                <a href="mars.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mars</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
+                <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+            </ul>
+        </div>
+
+        <div class="leftMenu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-scroll>News</a></li>
+                    <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" type="button">Commu trail run &#9660;
+                    </button>
+
+                    <div id="dropdown" class="z-10 hidden bg-white text-center -top-10">
+                        <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                          <li>
+                            <a href="jan.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Janvier</a>
+                        </li>
+                        <li>
+                            <a href="fev.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Février</a>
+                        </li>
+                        <li>
+                            <a href="mars.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mars</a>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="leftMenu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html" data-scroll>News</a></li>
-                            <li><a href="commu.html" data-scroll>Commu Trail Run</a></li>
-                            <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
-                        </ul>
-                    </nav>
-                </div>
 
-                <div class="centerMenu">
-                    <a href="index.html">
-                        <img src="./ressources/img/tbsl_logo.png" alt="logo">
-                    </a>
-                </div>
+            </li>
+            <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
+        </ul>
+    </nav>
+</div>
 
-                <div class="rightMenu">
-                    <nav>
-                        <ul>
-                            <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                            <li><a href="membre.html" data-scroll>Devenir membre</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+<div class="centerMenu">
+    <a href="index.html">
+        <img src="./ressources/img/tbsl_logo.png" alt="logo">
+    </a>
+</div>
+
+<div class="rightMenu">
+    <nav>
+        <ul>
+            <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+            <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+        </ul>
+    </nav>
+</div>
 
 
-    </header>
+
+</div>
+</div>
+
+
+</header>
+<br>
+<br><br>
+<br><br>
+<br><br>   
+<!-- Another Section -->
+<section class="container mx-auto my-10" id="membre">
+    <h2 class="text-2xl font-bold mb-4">Informations pour devenir membre de l'association </h2>
+
+    <p> Tu retrouveras ici les informations pour devenir membre du club, tu trouveras le lien de l'inscription à remplir et nous reviendrons vers toi pour t'acceuillir dans l'association.<br><br>
+
+        <h4 class="font-bold mb-4">Cotisation</h4>
+        Le montant de la cotisation est fixé par le comité, celui-ci s'élève à 30.00 CHF pour l'année 2024. <br><br>
+
+        <h4 class="font-bold mb-4">Les types d'adhésion en tant que membre </h4>
+        Tu peux choisir le type d'adhésion que tu souhaites faire dans l'association, soit :<br> 
+        <ul>
+            <li>-membre passif : participe à la cotisation  du club et ne s'engage pas dans le développement du club.</li>
+            <li>-membre actif : participe à la cotisation du club et s'engage dans les différentes activités pour développer le club (exemple manifestation).</li>
+        </ul>
+        <br>
+    </p>
+    <br>    
+    <div class="text-center">
+        <a href="https://docs.google.com/forms/u/1/d/1eYQvbHV9EOogL1PBXIybyybwh42ps5gYvgt9Et6Wa3w">Devenir membre</a><br>
+    </div>
+
     <br>
-    <br><br>
-    <br><br>
-    <br><br>   
-    <!-- Another Section -->
-    <section class="container mx-auto my-10" id="membre">
-        <h2 class="text-2xl font-bold mb-4">Informations pour devenir membre de l'association </h2>
+    <br>
+</section>
+<!-- Footer Section -->
+<footer class="fixed w-full bottom-0">
+    <p>&copy; 2024 Association Trail Blonay - St-Légier</p>
 
-        <p> Tu retrouveras ici les informations pour devenir membre du club, tu trouveras le lien de l'inscription à remplir et nous reviendrons vers toi pour t'acceuillir dans l'association.<br><br>
+    <div class="rounded-social-buttons">
+        <a class="social-button facebook"
+        href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"><i
+        class="fab fa-facebook-f"></i></a>
+        <a class="social-button youtube" href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"><i
+            class="fab fa-youtube"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/trailblonaystlegier/" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
-            <h4 class="font-bold mb-4">Cotisation</h4>
-            Le montant de la cotisation est fixé par le comité, celui-ci s'élève à 30.00 CHF pour l'année 2024. <br><br>
-
-            <h4 class="font-bold mb-4">Les types d'adhésion en tant que membre </h4>
-            Tu peux choisir le type d'adhésion que tu souhaites faire dans l'association, soit :<br> 
-            <ul>
-                <li>-membre passif : participe à la cotisation  du club et ne s'engage pas dans le développement du club.</li>
-                <li>-membre actif : participe à la cotisation du club et s'engage dans les différentes activités pour développer le club (exemple manifestation).</li>
-            </ul>
-            <br>
-        </p>
-        <br>    
-        <div class="text-center">
-            <a href="https://docs.google.com/forms/u/1/d/1eYQvbHV9EOogL1PBXIybyybwh42ps5gYvgt9Et6Wa3w">Devenir membre</a><br>
-        </div>
-
-        <br>
-        <br>
-    </section>
-    <!-- Footer Section -->
-    <footer class="fixed w-full bottom-0">
-        <p>&copy; 2024 Association Trail Blonay - St-Légier</p>
-
-        <div class="rounded-social-buttons">
-            <a class="social-button facebook"
-            href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"><i
-            class="fab fa-facebook-f"></i></a>
-            <a class="social-button youtube" href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"><i
-                class="fab fa-youtube"></i></a>
-                <a class="social-button instagram" href="https://www.instagram.com/trailblonaystlegier/" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
-                </div>
-            </footer>
-        </body>
-        </html>
+    </body>
+    </html>
