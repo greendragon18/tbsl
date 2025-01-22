@@ -15,7 +15,7 @@
     <!-- Inclure le lien vers votre fichier CSS personnalisé -->
     <link rel="stylesheet" href="ressources/styles/styles.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header Section -->
     <header>
@@ -29,9 +29,33 @@
                     </label>
                     <ul class="menu">
                         <li><a href="index.html" data-scroll>News</a></li>
-                        <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdownSmart" type="button">Commu trail run &#9660;
+                        <li>
+                            <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdownSmart1" type="button">La course &#9660;</button>
+                            <div id="dropdownSmart1" class="z-10 hidden bg-white w-full text-center">
+                                <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
+                                    <li>
+                                        <a href="info.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations générales</a>
+                                    </li>
+                                    <li>
+                                        <a href="follychonne.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Follychonne 31km</a>
+                                    </li>
+                                    <li>
+                                        <a href="narcisse.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Narcisse 10,7km</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement de course</a>
+                                    </li>
+                                    <li>
+                                        <a href="sponsors.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdownSmart2" type="button">Commu trail run &#9660;
                         </button>
-                        <div id="dropdownSmart" class="z-10 hidden bg-white w-full text-center">
+                        <div id="dropdownSmart2" class="z-10 hidden bg-white w-full text-center">
                             <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                               <li>
                                 <a href="jan.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Janvier</a>
@@ -48,11 +72,23 @@
                             <li>
                                 <a href="mai.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mai</a>
                             </li>
+                            <li>
+                                <a href="juin.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juin</a>
+                            </li>
+                            <li>
+                                <a href="juillet.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juillet</a>
+                            </li>
+                            <li>
+                                <a href="aout.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Août</a>
+                            </li>
+                            <li>
+                                <a href="octobre.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Octobre</a>
+                            </li>
                         </ul>
                     </div>
 
                 </li>
-                <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
+                <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
                 <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
                 <li><a href="membre.html" data-scroll>Devenir membre</a></li>
             </ul>
@@ -60,57 +96,89 @@
 
         <div class="leftMenu">
             <nav>
-                <ul>
-                    <li><a href="index.html" data-scroll>News</a></li>
-                    <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" type="button">Commu trail run &#9660;
-                    </button>
+                <ul class="justify-between">
+                    <li style="width: 90px;"><a href="index.html" data-scroll>News</a></li>
+                    <li style="width: 150px;">
+                        <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" type="button">La course &#9660;</button>
+                        <div id="dropdown1" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200 w-150" aria-labelledby="dropdownDefaultButton1">
+                                <li>
+                                    <a href="info.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations générales</a>
+                                </li>
+                                <li>
+                                    <a href="follychonne.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Follychonne 31km</a>
+                                </li>
+                                <li>
+                                    <a href="narcisse.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Narcisse 10,7km</a>
+                                </li>
+                                <li>
+                                    <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement de course</a>
+                                </li>
+                                <li>
+                                    <a href="sponsors.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
+                                </li>
 
-                    <div id="dropdown" class="z-10 hidden bg-white text-center -top-10">
-                        <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                          <li>
-                            <a href="jan.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Janvier</a>
-                        </li>
-                        <li>
-                            <a href="fev.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Février</a>
-                        </li>
-                        <li>
-                            <a href="mars.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mars</a>
-                        </li>
-                        <li>
-                            <a href="avril.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Avril</a>
-                        </li>
-                        <li>
-                            <a href="mai.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mai</a>
-                        </li>
-                    </ul>
-                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li style="width: 150px;">
+                        <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2" type="button">Commu trail run &#9660;</button>
+                        <div id="dropdown2" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton2">
+                                <li>
+                                    <a href="jan.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Janvier</a>
+                                </li>
+                                <li>
+                                    <a href="fev.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Février</a>
+                                </li>
+                                <li>
+                                    <a href="mars.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mars</a>
+                                </li>
+                                <li>
+                                    <a href="avril.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Avril</a>
+                                </li>
+                                <li>
+                                    <a href="mai.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mai</a>
+                                </li>
+                                <li>
+                                    <a href="juin.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juin</a>
+                                </li>
+                                <li>
+                                    <a href="juillet.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juillet</a>
+                                </li>
+                                <li>
+                                    <a href="aout.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Août</a>
+                                </li>
+                                <li>
+                                    <a href="octobre.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Octobre</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="centerMenu">
+            <a href="index.html">
+                <img src="./ressources/img/tbsl_logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="rightMenu">
+            <nav>
+                <ul class="justify-between">
+                    <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
+                    <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                    <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+                </ul>
+            </nav>
+        </div>
 
 
-            </li>
-            <li><a href="tbsl.html" data-scroll>À propos de TBSL</a></li>
-        </ul>
-    </nav>
-</div>
 
-<div class="centerMenu">
-    <a href="index.html">
-        <img src="./ressources/img/tbsl_logo.png" alt="logo">
-    </a>
-</div>
-
-<div class="rightMenu">
-    <nav>
-        <ul>
-            <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-            <li><a href="membre.html" data-scroll>Devenir membre</a></li>
-        </ul>
-    </nav>
-</div>
-
-
-
-</div>
-</div>
+    </div>
 
 
 </header>
@@ -118,86 +186,82 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-
-<!-- Another Section -->
-<section class="container mx-auto my-10" id="commu">
-
-    <h2 class="text-2xl font-bold mb-4">Les communautés trail run</h2>
 
 
-    <br>
-
-    <p>Nous proposons un run communautaire dans la région de la Riviera de façon mensuelle. Tu trouveras nos récaps de nos sorties dans l'onglet commu trail run. Tout le monde est bienvenue, néanmoins chaque personne doit être capable de courir la distance et le dénivelé indiqué dans le flyer.<br><br>
-
-        La prochaine sortie est organisée  le dimanche 16 juin. Les informations viendront bientôt, mais tu peux sans autre déjà réservé cette date.<br><br> 
 
 
-<!--
-        <h4 class="font-bold mb-4">Édition spéciale le dimanche 5 mai </h4>
-        TBSL s'engage dans le duel intercommunal et proposera une édition spéciale le dimanche 5 mai. Nous nous rejouissons de vous retrouver à cette date afin de vous faire découvrir les pléiades en partant de la gare de Blonay. Le parcours sera effectué en sens inverse de l'édition de janvier. <br><br>
+<!-- Community Section -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-orange-600 text-3xl font-bold text-center mb-8">Run communautaire le 26 janvier</h2>
+        <p class="text-gray-600 text-justify">
+            Nous proposons un <span class="font-semibold">run communautaire</span> dans la région de la Riviera de façon
+            mensuelle. Tout le monde est le bienvenu, néanmoins chaque personne doit être capable de courir la distance
+            et le dénivelé indiqué sur le flyer. La prochaine sortie est agendée pour <span class="font-semibold"> le dimanche 26 janvier avec un rendez-vous à 9h30 à la gare de Blonay.</span><br><br>
+        </p>
+        <h3 class="text-xl font-semibold mb-4">Flyer et inscription :</h3>
+        <p class="text-gray-600 text-justify mt-4">
+            L'inscription se fait : <a href="https://docs.google.com/forms/d/14ztmftHUIRYBFSiMzE0POfeahjr-y0uohd26vaOWS0I/" class="text-orange-600 underline">ICI</a>.<br><br>
 
-
-        <div class="text-center">
-            <a href="https://docs.google.com/forms/d/1Be7mxUjPMDiCCStyNphcWfK3SpcqcCLMN99II8kh0TY">Inscription sortie de mai </a><br>
+            <img src="./ressources/img/2025/flyerJan.png" alt="Flyer de janvier" class="w-full rounded-md shadow-md"><br>
+        </p>
+        <div>
+        <h3 class="text-xl font-semibold mb-4">Parcours et GPX :</h3>
+        <p class="text-gray-600 mb-4">
+            Tu peux retrouver le GPX de la course <a href="./ressources/gpx/narcisse_10,7km.gpx" download class="text-orange-600 underline">ICI</a> et visualiser le parcours ci-dessous.
+        </p>
+        <div class="w-full flex items-center justify-center">
+            <div class="strava-embed-placeholder mb-4" data-embed-type="route" data-embed-id="3284165198068045990" data-style="standard" data-map-hash="12.19/46.47583/6.90453" data-club-id="1308872" data-from-embed="true"></div>
+            <script src="https://strava-embeds.com/embed.js"></script>
         </div>
-        <br><br><br>
-        <h4 class="font-bold mb-4">Flyer de mai :</h4>
-        <img src="./ressources/img/flyerMai.png" alt="Mai"><br>
         <br>
-
-
-        <h4 class="font-bold mb-4">Informations sur le parcours de mai :</h4>
-        <p> Tu peux retrouver le gpx de la sortie <a href="./ressources/gpx/tbsl_community_run_2024_05_05.gpx">ICI</a> et le profil ci-dessous. À noter que le rendez-vous est à la gare de Blonay.</p>
-        <br>
-        <div class="fatmap-embed-placeholder" data-type="adventure" data-id="3747715" data-screen="elevation-profile"></div>
-        <script defer src="https://embeds.fatmap.com/embed.js"></script>
-        <br>
-    -->
-    <h4 class="font-bold mb-4">Matériels nécessaires :</h4>
-    Concernant le matériel voici une petite liste que nous conseillons d'avoir : <br>
-    
-    <ul>
-        <li>-Bonnes chaussures avec du profil (on risque d'être sur de la neige)</li>
-        <li>-Réserve d'eau</li>
-        <li>-Réserve alimentaire</li>
-        <li>-Téléphone mobile</li>
-        <li>-Vêtements adaptés à la météo</li>
-        <li>-Vêtements chauds d'après course (pour l'apéro après la course)</li>
-    </ul>
-    <br>
-    Après la sortie nous allons organiser un petit apéro afin de pouvoir échanger. Le parcours peut encore changer selon
-les conditions météorologiques.</p><br>
-
-
-
-
-
-
-
-<p> Pour ne rien rater des prochains communautés trail run nous te conseillons de nous suivre sur les différents
-réseaux sociaux ci-dessous dans le pied de page. </p><br>
+    </div>
+    </div>
 </section>
 
-<br>
-<br>
+<!-- Main Section -->
+<section class="container mx-auto my-16 px-6">
+    <h2 class="text-orange-600 text-3xl font-bold text-center mb-8">Le premier Trail de Blonay - St-Légier débarque !</h2>
+    <p class="text-gray-600 text-justify">
+        Pour sa première édition, le Trail Blonay – Saint-Légier t'emmène sur les hauteurs de la Riviera, à la
+        découverte des forêts verdoyantes, des champs de narcisses et des premiers sommets des Préalpes, avec un passage
+        aérien aux Pléiades.
+    </p>
+    <p class="text-gray-600 text-justify mt-4">
+        Trois parcours, pour lancer ta saison de la plus belle des manières : une course enfant, une Narcisse de
+        <span class="font-semibold">11 km avec 790m de D+</span> et une Follychonne plus costaude avec ses
+        <span class="font-semibold">31 km et un D+ de 1950m</span>. Le départ et l’arrivée se feront sur la place du
+        village de Blonay, dans une ambiance festive et familiale visant à réunir athlètes, curieux et amoureux de la
+        nature autour d’un verre bien mérité.
+    </p>
+    <p class="text-center mt-6 text-gray-600">
+        Tu trouveras plus d'informations dans l'onglet <span class="font-semibold">"La course"</span>.
+    </p>
+    <div class="flex justify-center mt-8 my-8">
+        <img src="./ressources/img/trailtbsl.png" alt="Flyer de la manifestation" class="rounded-lg shadow-md w-full max-w-3xl">
+    </div>
+</section>
 
 <!-- Footer Section -->
-<footer class="w-full bottom-0">
-    <p>&copy; 2024 Association Trail Blonay - St-Légier</p>
+<footer class="py-6">
+    <div class="container mx-auto px-6 text-center">
+        <p class="mb-4 text-center">&copy; 2025 Association Trail Blonay - St-Légier</p>
+        <div class="rs flex justify-center space-x-4">
+            <a href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank" class="text-white-600 hover:text-blue-500">
+                <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank" class="text-white-600 hover:text-red-500">
+                <i class="fab fa-youtube text-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/trailblonaystlegier/" target="_blank" class="text-white-600 hover:text-pink-600">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+        </div>
+    </div>
+</footer>
 
-    <div class="rounded-social-buttons">
-        <a class="social-button facebook"
-        href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"><i
-        class="fab fa-facebook-f"></i></a>
-        <a class="social-button youtube" href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"><i
-            class="fab fa-youtube"></i></a>
-            <a class="social-button instagram" href="https://www.instagram.com/trailblonaystlegier/" target="_blank"><i
-                class="fab fa-instagram"></i></a>
-            </div>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
-    </body>
-    </html>
+<!-- Font Awesome Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
