@@ -5,153 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association de Trail Blonay - St-Légier</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-    crossorigin="anonymous"></script>
+            integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+            crossorigin="anonymous"></script>
     <link rel="icon" href="./ressources/img/tbsl_logo.png" type="image/x-icon">
     <!-- Inclure le lien vers le fichier CSS de Tailwind -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
 
     <!-- Inclure le lien vers votre fichier CSS personnalisé -->
     <link rel="stylesheet" href="ressources/styles/styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header Section -->
-    <header>
-        <!-- Menu Links -->
-        <div class="header">
-            <div class="menuAll">
-                <div class="smartphoneLeftMenu">
-                    <input id="menu-toggle" type="checkbox"/>
-                    <label class='menu-button-container' for="menu-toggle">
-                        <div class='menu-button'></div>
-                    </label>
-                    <ul class="menu">
-                        <li><a href="index.html" data-scroll>News</a></li>
-                        <li>
-                            <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdownSmart1" type="button">La course &#9660;</button>
-                            <div id="dropdownSmart1" class="z-10 hidden bg-white w-full text-center">
-                                <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
-                                    <li>
-                                        <a href="info.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations générales</a>
-                                    </li>
-                                    <li>
-                                        <a href="follychonne.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Follychonne 31km</a>
-                                    </li>
-                                    <li>
-                                        <a href="narcisse.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Narcisse 10,7km</a>
-                                    </li>
-                                    <li>
-                                        <a href="enfants.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses enfants</a>
-                                    </li>
-                                    <li>
-                                        <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement de course</a>
-                                    </li>
-                                    <li>
-                                    <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook 2025</a>
+<!-- Header Section -->
+<header>
+    <!-- Menu Links -->
+    <div class="header">
+        <div class="menuAll">
+            <div class="smartphoneLeftMenu">
+                <input id="menu-toggle" type="checkbox"/>
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html" data-scroll>News</a></li>
+                    <li>
+                        <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdownSmart1" type="button">La
+                            course &#9660;
+                        </button>
+                        <div id="dropdownSmart1" class="z-10 hidden bg-white w-full text-center">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton1">
+                                <li>
+                                    <a href="info.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations
+                                        générales</a>
                                 </li>
+                                <li>
+                                    <a href="follychonne.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                        Follychonne 31km</a>
+                                </li>
+                                <li>
+                                    <a href="narcisse.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                        Narcisse 10,7km</a>
+                                </li>
+                                <li>
+                                    <a href="enfants.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses
+                                        enfants</a>
+                                </li>
+                                <li>
+                                    <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement
+                                        de course</a>
+                                </li>
+                                <li>
+                                    <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/"
+                                       target="_blank" download
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook
+                                        2025</a>
+                                </li>
+                                <li>
+                                    <a href="sponsors.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdownSmart2" type="button">Commu
+                            trail run &#9660;
+                        </button>
+                        <div id="dropdownSmart2" class="z-10 hidden bg-white w-full text-center">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="2024/sorties.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
+                                </li>
+                                <li>
+                                    <a href="2025/sorties.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
+                    <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                    <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+                </ul>
+            </div>
+
+            <div class="leftMenu">
+                <nav>
+                    <ul class="justify-between">
+                        <li style="width: 90px;"><a href="index.html" data-scroll>News</a></li>
+                        <li style="width: 150px;">
+                            <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" type="button">La course
+                                &#9660;
+                            </button>
+                            <div id="dropdown1" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
+                                <ul class="text-sm text-gray-700 dark:text-gray-200 w-150"
+                                    aria-labelledby="dropdownDefaultButton1">
                                     <li>
-                                        <a href="sponsors.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
+                                        <a href="info.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations
+                                            générales</a>
+                                    </li>
+                                    <li>
+                                        <a href="follychonne.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                            Follychonne 31km</a>
+                                    </li>
+                                    <li>
+                                        <a href="narcisse.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                            Narcisse 10,7km</a>
+                                    </li>
+                                    <li>
+                                        <a href="enfants.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses
+                                            enfants</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement
+                                            de course</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/"
+                                           target="_blank" download
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook
+                                            2025</a>
+                                    </li>
+                                    <li>
+                                        <a href="sponsors.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
                                     </li>
 
                                 </ul>
                             </div>
                         </li>
 
-                        <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdownSmart2" type="button">Commu trail run &#9660;
-                        </button>
-                        <div id="dropdownSmart2" class="z-10 hidden bg-white w-full text-center">
-                            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                              <li>
-                                <a href="2024/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
-                            </li>
-                            <li>
-                                <a href="2025/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li style="width: 150px;">
+                            <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2" type="button">Commu
+                                trail run &#9660;
+                            </button>
+                            <div id="dropdown2" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
+                                <ul class="text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDefaultButton2">
+                                    <li>
+                                        <a href="2024/sorties.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
+                                    </li>
+                                    <li>
+                                        <a href="2025/sorties.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-                </li>
-                <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
-                <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                <li><a href="membre.html" data-scroll>Devenir membre</a></li>
-            </ul>
+            <div class="centerMenu">
+                <a href="index.html">
+                    <img src="./ressources/img/tbsl_logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="rightMenu">
+                <nav>
+                    <ul class="justify-between">
+                        <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
+                        <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                        <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-        <div class="leftMenu">
-            <nav>
-                <ul class="justify-between">
-                    <li style="width: 90px;"><a href="index.html" data-scroll>News</a></li>
-                    <li style="width: 150px;">
-                        <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" type="button">La course &#9660;</button>
-                        <div id="dropdown1" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
-                            <ul class="text-sm text-gray-700 dark:text-gray-200 w-150" aria-labelledby="dropdownDefaultButton1">
-                                <li>
-                                    <a href="info.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations générales</a>
-                                </li>
-                                <li>
-                                    <a href="follychonne.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Follychonne 31km</a>
-                                </li>
-                                <li>
-                                    <a href="narcisse.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Narcisse 10,7km</a>
-                                </li>
-                                <li>
-                                    <a href="enfants.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses enfants</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement de course</a>
-
-                                </li>
-                                <li>
-                                    <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook 2025</a>
-                                </li>
-                                <li>
-                                    <a href="sponsors.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li style="width: 150px;">
-                        <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2" type="button">Commu trail run &#9660;</button>
-                        <div id="dropdown2" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
-                            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton2">
-                                <li>
-                                    <a href="2024/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
-                                </li>
-                                <li>
-                                    <a href="2025/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="centerMenu">
-            <a href="index.html">
-                <img src="./ressources/img/tbsl_logo.png" alt="logo">
-            </a>
-        </div>
-
-        <div class="rightMenu">
-            <nav>
-                <ul class="justify-between">
-                    <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
-                    <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                    <li><a href="membre.html" data-scroll>Devenir membre</a></li>
-                </ul>
-            </nav>
-        </div>
-
-
-
     </div>
-
-
 </header>
 <br>
 <br>
@@ -165,15 +205,22 @@
     <div class="mb-8">
         <h3 class="text-xl font-semibold mb-4 ">Description du parcours :</h3>
         <p class="text-gray-600 mb-4">
-            Parce qu’il n’y a pas que les grands qui ont droit à leur moment de gloire, les enfants aussi veulent s’éclater et TBSL ne les oublie pas !<br>
-            Placée sous le signe du fun, cette course se veut avant tout ludique et conviviale, bien plus qu’une simple compétition. Les enfants bénéficieront d’un vrai départ, comme les adultes, sous la même arche, et suivront un parcours qui les fera traverser un parc qu’ils connaissent probablement déjà. Les plus grands enfants effectueront deux boucles du parc.
+            Parce qu’il n’y a pas que les grands qui ont droit à leur moment de gloire, les enfants aussi veulent
+            s’éclater et TBSL ne les oublie pas !<br>
+            Placée sous le signe du fun, cette course se veut avant tout ludique et conviviale, bien plus qu’une simple
+            compétition. Les enfants bénéficieront d’un vrai départ, comme les adultes, sous la même arche, et suivront
+            un parcours qui les fera traverser un parc qu’ils connaissent probablement déjà. Les plus grands enfants
+            effectueront deux boucles du parc.
         </p>
         <p class="text-gray-600 mb-4">
-            Un “lièvre” déguisé ouvrira la course et il se pourrait bien que quelques obstacles se glissent sur le trajet !<br>
-            Le premier départ (pour les plus petits) aura lieu à 14h, suivi de celui des plus grands, 15 à 20 minutes plus tard.
+            Un “lièvre” déguisé ouvrira la course et il se pourrait bien que quelques obstacles se glissent sur le
+            trajet !<br>
+            Le premier départ (pour les plus petits) aura lieu à 14h, suivi de celui des plus grands, 15 à 20 minutes
+            plus tard.
         </p>
         <p class="text-gray-600 mb-4">
-            Nous veillerons à ce que chaque participant reparte avec un petit souvenir… et surtout on l'espère, un grand sourire !
+            Nous veillerons à ce que chaque participant reparte avec un petit souvenir… et surtout on l'espère, un grand
+            sourire !
         </p>
 
     </div>
@@ -181,7 +228,9 @@
     <div class="text-gray-600 mb-8">
         <h3 class="text-xl font-semibold mb-4">Déroulement de la journée :</h3>
         <ul class="space-y-2">
-            <li><span class="font-semibold">12h30 - 13h45 :</span> Retraits dossards & inscription (carte & Twint uniquement) pour les courses enfants</li>
+            <li><span class="font-semibold">12h30 - 13h45 :</span> Retraits dossards & inscription (carte & Twint
+                uniquement) pour les courses enfants
+            </li>
             <li><span class="font-semibold">14h00 :</span> Courses enfants</li>
         </ul>
     </div>
@@ -190,7 +239,10 @@
     <div class="text-gray-600 mb-8">
         <h3 class="text-xl font-semibold mb-4 ">Inscription & prix:</h3>
         <p class="leading-relaxed text-justify mb-4">
-            L’inscription peut se faire en ligne ou sur place le jour de la course, sous réserve de places disponibles. Pour les inscriptions tardives sur place, une majoration de <strong>5 CHF</strong> sera demandée pour <strong>les courses adultes</strong> et <strong>2 CHF</strong> pour <strong>les courses enfants</strong>. À noter qu'il n'y aura pas de nom/prénom sur les dossards pour les inscriptions effectuées le jour même.
+            L’inscription peut se faire en ligne ou sur place le jour de la course, sous réserve de places disponibles.
+            Pour les inscriptions tardives sur place, une majoration de <strong>5 CHF</strong> sera demandée pour
+            <strong>les courses adultes</strong> et <strong>2 CHF</strong> pour <strong>les courses enfants</strong>. À
+            noter qu'il n'y aura pas de nom/prénom sur les dossards pour les inscriptions effectuées le jour même.
         </p>
         <div class="flex items-center justify-center">
             <script type="text/javascript" src="https://www.mso-chrono.ch/widget/race.php?id=2213&lg=fr&t=1"></script>
@@ -201,41 +253,39 @@
         </p>
 
 
-
-
         <div class="overflow-x-auto py-4">
             <table class="min-w-full border-collapse border border-gray-200">
                 <thead>
-                    <tr class="bg-orange-100 text-gray-700">
-                        <th class="border border-gray-200 px-4 py-2 text-center">Course</th>
-                        <th class="border border-gray-200 px-4 py-2 text-center">Prix jusqu'au 31.12.2024</th>
-                        <th class="border border-gray-200 px-4 py-2 text-center">Prix jusqu'au 28.02.2025</th>
-                        <th class="border border-gray-200 px-4 py-2 text-center">Prix jusqu'au 14.05.2025</th>
-                        <th class="border border-gray-200 px-4 py-2 text-center">Inscription sur place</th>
-                    </tr>
+                <tr class="bg-orange-100 text-gray-700">
+                    <th class="border border-gray-200 px-4 py-2 text-center">Course</th>
+                    <th class="border border-gray-200 px-4 py-2 text-center">Prix jusqu'au 31.12.2024</th>
+                    <th class="border border-gray-200 px-4 py-2 text-center">Prix jusqu'au 28.02.2025</th>
+                    <th class="border border-gray-200 px-4 py-2 text-center">Prix jusqu'au 14.05.2025</th>
+                    <th class="border border-gray-200 px-4 py-2 text-center">Inscription sur place</th>
+                </tr>
                 </thead>
                 <tbody class="text-gray-600">
-                    <tr>
-                        <td class="border px-4 py-2">La narcisse 10km</td>
-                        <td class="border px-4 py-2">20 CHF</td>
-                        <td class="border px-4 py-2 text-center">30 CHF</td>
-                        <td class="border px-4 py-2 text-center">40 CHF</td>
-                        <td class="border px-4 py-2 text-center">45 CHF</td>
-                    </tr>
-                    <tr class="bg-gray-50">
-                        <td class="border px-4 py-2">La follychonne 31km </td>
-                        <td class="border px-4 py-2">31 CHF</td>
-                        <td class="border px-4 py-2 text-center">50 CHF</td>
-                        <td class="border px-4 py-2 text-center">60 CHF</td>
-                        <td class="border px-4 py-2 text-center">65 CHF</td>
-                    </tr>
-                    <tr class="bg-gray-50">
-                        <td class="border px-4 py-2">Courses enfants</td>
-                        <td class="border px-4 py-2">10 CHF</td>
-                        <td class="border px-4 py-2 text-center">10 CHF</td>
-                        <td class="border px-4 py-2 text-center">10 CHF</td>
-                        <td class="border px-4 py-2 text-center">12 CHF</td>
-                    </tr>
+                <tr>
+                    <td class="border px-4 py-2">La narcisse 10km</td>
+                    <td class="border px-4 py-2">20 CHF</td>
+                    <td class="border px-4 py-2 text-center">30 CHF</td>
+                    <td class="border px-4 py-2 text-center">40 CHF</td>
+                    <td class="border px-4 py-2 text-center">45 CHF</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="border px-4 py-2">La follychonne 31km</td>
+                    <td class="border px-4 py-2">31 CHF</td>
+                    <td class="border px-4 py-2 text-center">50 CHF</td>
+                    <td class="border px-4 py-2 text-center">60 CHF</td>
+                    <td class="border px-4 py-2 text-center">65 CHF</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="border px-4 py-2">Courses enfants</td>
+                    <td class="border px-4 py-2">10 CHF</td>
+                    <td class="border px-4 py-2 text-center">10 CHF</td>
+                    <td class="border px-4 py-2 text-center">10 CHF</td>
+                    <td class="border px-4 py-2 text-center">12 CHF</td>
+                </tr>
 
                 </tbody>
             </table>
@@ -247,13 +297,18 @@
     <div>
         <h3 class="text-xl font-semibold mb-4">Parcours et GPX :</h3>
         <p class="text-gray-600 mb-4">
-            Tu peux retrouver le GPX de la course <a href="https://www.dropbox.com/scl/fi/c22wdi7n7pfgf30ur8jwi/kids.gpx?rlkey=enmvvbyop3ly4lro00fliymle&st=pn0mxl52&dl=1" class="text-orange-600 underline">ICI</a> et visualiser le parcours ci-dessous.
+            Tu peux retrouver le GPX de la course <a
+                href="https://www.dropbox.com/scl/fi/c22wdi7n7pfgf30ur8jwi/kids.gpx?rlkey=enmvvbyop3ly4lro00fliymle&st=pn0mxl52&dl=1"
+                class="text-orange-600 underline">ICI</a> et visualiser le parcours ci-dessous.
         </p>
         <div class="w-full flex items-center justify-center">
-            <div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3351828760217316530" data-style="standard" data-map-hash="15.28/46.462965/6.896295" data-club-id="1308872" data-from-embed="true">
+            <div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3351828760217316530"
+                 data-style="standard" data-map-hash="15.28/46.462965/6.896295" data-club-id="1308872"
+                 data-from-embed="true">
 
-            </div><script src="https://strava-embeds.com/embed.js"></script>
-            
+            </div>
+            <script src="https://strava-embeds.com/embed.js"></script>
+
         </div>
 
     </div>
@@ -268,13 +323,16 @@
     <div class="container mx-auto px-6 text-center">
         <p class="mb-4 text-center">&copy; 2025 Association Trail Blonay - St-Légier</p>
         <div class="rs flex justify-center space-x-4">
-            <a href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank" class="text-white-600 hover:text-blue-500">
+            <a href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"
+               class="text-white-600 hover:text-blue-500">
                 <i class="fab fa-facebook-f text-xl"></i>
             </a>
-            <a href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank" class="text-white-600 hover:text-red-500">
+            <a href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"
+               class="text-white-600 hover:text-red-500">
                 <i class="fab fa-youtube text-xl"></i>
             </a>
-            <a href="https://www.instagram.com/trailblonaystlegier/" target="_blank" class="text-white-600 hover:text-pink-600">
+            <a href="https://www.instagram.com/trailblonaystlegier/" target="_blank"
+               class="text-white-600 hover:text-pink-600">
                 <i class="fab fa-instagram text-xl"></i>
             </a>
         </div>

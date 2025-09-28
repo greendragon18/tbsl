@@ -5,152 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association de Trail Blonay - St-Légier</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-    crossorigin="anonymous"></script>
+            integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+            crossorigin="anonymous"></script>
     <link rel="icon" href="./ressources/img/tbsl_logo.png" type="image/x-icon">
     <!-- Inclure le lien vers le fichier CSS de Tailwind -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
 
     <!-- Inclure le lien vers votre fichier CSS personnalisé -->
     <link rel="stylesheet" href="ressources/styles/styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header Section -->
-    <header>
-        <!-- Menu Links -->
-        <div class="header">
-            <div class="menuAll">
-                <div class="smartphoneLeftMenu">
-                    <input id="menu-toggle" type="checkbox"/>
-                    <label class='menu-button-container' for="menu-toggle">
-                        <div class='menu-button'></div>
-                    </label>
-                    <ul class="menu">
-                        <li><a href="index.html" data-scroll>News</a></li>
-                        <li>
-                            <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdownSmart1" type="button">La course &#9660;</button>
-                            <div id="dropdownSmart1" class="z-10 hidden bg-white w-full text-center">
-                                <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
-                                    <li>
-                                        <a href="info.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations générales</a>
-                                    </li>
-                                    <li>
-                                        <a href="follychonne.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Follychonne 31km</a>
-                                    </li>
-                                    <li>
-                                        <a href="narcisse.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Narcisse 10,7km</a>
-                                    </li>
-                                    <li>
-                                        <a href="enfants.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses enfants</a>
-                                    </li>
-                                    <li>
-                                        <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement de course</a>
-                                    </li>
-                                    <li>
-                                    <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook 2025</a>
+<!-- Header Section -->
+<header>
+    <!-- Menu Links -->
+    <div class="header">
+        <div class="menuAll">
+            <div class="smartphoneLeftMenu">
+                <input id="menu-toggle" type="checkbox"/>
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html" data-scroll>News</a></li>
+                    <li>
+                        <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdownSmart1" type="button">La
+                            course &#9660;
+                        </button>
+                        <div id="dropdownSmart1" class="z-10 hidden bg-white w-full text-center">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton1">
+                                <li>
+                                    <a href="info.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations
+                                        générales</a>
                                 </li>
+                                <li>
+                                    <a href="follychonne.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                        Follychonne 31km</a>
+                                </li>
+                                <li>
+                                    <a href="narcisse.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                        Narcisse 10,7km</a>
+                                </li>
+                                <li>
+                                    <a href="enfants.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses
+                                        enfants</a>
+                                </li>
+                                <li>
+                                    <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement
+                                        de course</a>
+                                </li>
+                                <li>
+                                    <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/"
+                                       target="_blank" download
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook
+                                        2025</a>
+                                </li>
+                                <li>
+                                    <a href="sponsors.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdownSmart2" type="button">Commu
+                            trail run &#9660;
+                        </button>
+                        <div id="dropdownSmart2" class="z-10 hidden bg-white w-full text-center">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="2024/sorties.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
+                                </li>
+                                <li>
+                                    <a href="2025/sorties.html"
+                                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
+                    <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                    <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+                </ul>
+            </div>
+
+            <div class="leftMenu">
+                <nav>
+                    <ul class="justify-between">
+                        <li style="width: 90px;"><a href="index.html" data-scroll>News</a></li>
+                        <li style="width: 150px;">
+                            <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" type="button">La course
+                                &#9660;
+                            </button>
+                            <div id="dropdown1" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
+                                <ul class="text-sm text-gray-700 dark:text-gray-200 w-150"
+                                    aria-labelledby="dropdownDefaultButton1">
                                     <li>
-                                        <a href="sponsors.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
+                                        <a href="info.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations
+                                            générales</a>
+                                    </li>
+                                    <li>
+                                        <a href="follychonne.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                            Follychonne 31km</a>
+                                    </li>
+                                    <li>
+                                        <a href="narcisse.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La
+                                            Narcisse 10,7km</a>
+                                    </li>
+                                    <li>
+                                        <a href="enfants.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses
+                                            enfants</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement
+                                            de course</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/"
+                                           target="_blank" download
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook
+                                            2025</a>
+                                    </li>
+                                    <li>
+                                        <a href="sponsors.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
                                     </li>
 
                                 </ul>
                             </div>
                         </li>
 
-                        <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdownSmart2" type="button">Commu trail run &#9660;
-                        </button>
-                        <div id="dropdownSmart2" class="z-10 hidden bg-white w-full text-center">
-                            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                              <li>
-                                <a href="2024/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
-                            </li>
-                            <li>
-                                <a href="2025/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li style="width: 150px;">
+                            <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2" type="button">Commu
+                                trail run &#9660;
+                            </button>
+                            <div id="dropdown2" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
+                                <ul class="text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDefaultButton2">
+                                    <li>
+                                        <a href="2024/sorties.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
+                                    </li>
+                                    <li>
+                                        <a href="2025/sorties.html"
+                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-                </li>
-                <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
-                <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                <li><a href="membre.html" data-scroll>Devenir membre</a></li>
-            </ul>
+            <div class="centerMenu">
+                <a href="index.html">
+                    <img src="./ressources/img/tbsl_logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="rightMenu">
+                <nav>
+                    <ul class="justify-between">
+                        <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
+                        <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
+                        <li><a href="membre.html" data-scroll>Devenir membre</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-        <div class="leftMenu">
-            <nav>
-                <ul class="justify-between">
-                    <li style="width: 90px;"><a href="index.html" data-scroll>News</a></li>
-                    <li style="width: 150px;">
-                        <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" type="button">La course &#9660;</button>
-                        <div id="dropdown1" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
-                            <ul class="text-sm text-gray-700 dark:text-gray-200 w-150" aria-labelledby="dropdownDefaultButton1">
-                                <li>
-                                    <a href="info.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informations générales</a>
-                                </li>
-                                <li>
-                                    <a href="follychonne.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Follychonne 31km</a>
-                                </li>
-                                <li>
-                                    <a href="narcisse.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">La Narcisse 10,7km</a>
-                                </li>
-                                <li>
-                                    <a href="enfants.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses enfants</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources/pdf/ReglementCourse.pdf" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Règlement de course</a>
-                                </li>
-                                <li>
-                                    <a href="https://drive.google.com/file/d/1fULOaVTz4jktPwUiuDgZQa7twxlJKlEg/" target="_blank" download  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Roadbook 2025</a>
-                                </li>
-                                <li>
-                                    <a href="sponsors.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsors</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li style="width: 150px;">
-                        <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2" type="button">Commu trail run &#9660;</button>
-                        <div id="dropdown2" class="dropdown-menu z-10 hidden bg-white text-center -top-10">
-                            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton2">
-                                <li>
-                                    <a href="2024/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
-                                </li>
-                                <li>
-                                    <a href="2025/sorties.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="centerMenu">
-            <a href="index.html">
-                <img src="./ressources/img/tbsl_logo.png" alt="logo">
-            </a>
-        </div>
-
-        <div class="rightMenu">
-            <nav>
-                <ul class="justify-between">
-                    <li><a href="benevole.html" data-scroll>Devenir bénévole</a></li>
-                    <li><a href="mailto:info@tbsl.ch">Nous contacter</a></li>
-                    <li><a href="membre.html" data-scroll>Devenir membre</a></li>
-                </ul>
-            </nav>
-        </div>
-
-
-
     </div>
-
-
 </header>
 <br>
 <br>
@@ -160,62 +200,73 @@
 <br>
 <section class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg" id="membre">
     <!-- Titre principal -->
-    <h2 class="text-3xl font-bold mb-6 text-center text-orange-600 pt-4">Deviens bénévole pour le Tour du Chablais et/ou le Trail de Blonay Saint-Légier !</h2>
-    
+    <h2 class="text-3xl font-bold mb-6 text-center text-orange-600 pt-4">Deviens bénévole pour le Tour du Chablais et/ou
+        le Trail de Blonay Saint-Légier !</h2>
+
     <!-- Description de l'association -->
     <p class="text-gray-600 leading-relaxed mb-8 text-lg">
-        Ces événements ne pourraient avoir lieu sans des personnes comme toi ! Ton engagement est essentiel pour en faire une réussite, et nous avons besoin de ton aide : <br>
+        Ces événements ne pourraient avoir lieu sans des personnes comme toi ! Ton engagement est essentiel pour en
+        faire une réussite, et nous avons besoin de ton aide : <br>
         <strong>📅 Mercredi 7 mai 2025 – Tour du Chablais (TDC) - à Praz-Dagoud St-Légier </strong> <br>
-        <strong>📅 Samedi 17 mai 2025 COMPLET <3 – Trail de Blonay Saint-Légier - à Tercier Blonay</strong>  
+        <strong>📅 Samedi 17 mai 2025 COMPLET <3 – Trail de Blonay Saint-Légier - à Tercier Blonay</strong>
 
-        </p>
-        <br>
-        <br>
-        <p class="text-gray-600 leading-relaxed mb-8 text-lg">
-            Rejoins-nous pour une expérience inoubliable, remplie de bonne humeur, de rires et de camaraderie en devenant un élément clé de ces belles aventures sportives. Que ce soit pour quelques heures ou toute la journée, il y a une mission pour toi :
-        </p>
-
-        <!-- Liste des missions -->
-        <ul class="list-disc list-inside text-gray-600 mb-8 space-y-2">
-            <li>Distribution des dossards</li>
-            <li>Mise en place du balisage</li>
-            <li>Circulation et signalisation</li>
-            <li>Ravitaillement des coureurs</li>
-            <li>Communication et informations</li>
-            <li>Gestion du parking</li>
-            <li>Vestiaire</li>
-            <li>Service au bar</li>
-            <li>Préparatifs</li>
-            <li>Démontage</li>
-        </ul>
-
-        <p class="text-gray-600 leading-relaxed mb-8 text-lg">
-            Ces différentes missions te permettront d’être au cœur de l’action et de vivre ces événements de l’intérieur. Les centaines de participants seront reconnaissants de te croiser sur les parcours, et grâce à toi, ils garderont un souvenir impérissable de leur passage dans notre belle région.
-        </p>
-
-        <p class="text-gray-600 leading-relaxed mb-8 text-lg">
-            💪 Ta bonne humeur et ton engagement sont les clés du succès de ces journées. Alors, n’hésite plus : rejoins-nous et deviens acteur de cette incroyable aventure !   
-        </p>
-
-        <div class="flex justify-center mt-8 my-8 pb-8">
-            <img src="./ressources/img/benevolat.png" alt="Flyer de bénévolat" class="rounded-lg shadow-md w-full max-w-3xl">
-        </div>
-    </section>
-
+    </p>
     <br>
     <br>
+    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+        Rejoins-nous pour une expérience inoubliable, remplie de bonne humeur, de rires et de camaraderie en devenant un
+        élément clé de ces belles aventures sportives. Que ce soit pour quelques heures ou toute la journée, il y a une
+        mission pour toi :
+    </p>
+
+    <!-- Liste des missions -->
+    <ul class="list-disc list-inside text-gray-600 mb-8 space-y-2">
+        <li>Distribution des dossards</li>
+        <li>Mise en place du balisage</li>
+        <li>Circulation et signalisation</li>
+        <li>Ravitaillement des coureurs</li>
+        <li>Communication et informations</li>
+        <li>Gestion du parking</li>
+        <li>Vestiaire</li>
+        <li>Service au bar</li>
+        <li>Préparatifs</li>
+        <li>Démontage</li>
+    </ul>
+
+    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+        Ces différentes missions te permettront d’être au cœur de l’action et de vivre ces événements de l’intérieur.
+        Les centaines de participants seront reconnaissants de te croiser sur les parcours, et grâce à toi, ils
+        garderont un souvenir impérissable de leur passage dans notre belle région.
+    </p>
+
+    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+        💪 Ta bonne humeur et ton engagement sont les clés du succès de ces journées. Alors, n’hésite plus : rejoins-nous
+        et deviens acteur de cette incroyable aventure !
+    </p>
+
+    <div class="flex justify-center mt-8 my-8 pb-8">
+        <img src="./ressources/img/benevolat.png" alt="Flyer de bénévolat"
+             class="rounded-lg shadow-md w-full max-w-3xl">
+    </div>
+</section>
+
+<br>
+<br>
 <!-- Footer Section -->
 <footer class="py-6">
     <div class="container mx-auto px-6 text-center">
         <p class="mb-4 text-center">&copy; 2025 Association Trail Blonay - St-Légier</p>
         <div class="rs flex justify-center space-x-4">
-            <a href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank" class="text-white-600 hover:text-blue-500">
+            <a href="https://www.facebook.com/people/Trail-Blonay-St-L%C3%A9gier/61554003370473/" target="_blank"
+               class="text-white-600 hover:text-blue-500">
                 <i class="fab fa-facebook-f text-xl"></i>
             </a>
-            <a href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank" class="text-white-600 hover:text-red-500">
+            <a href="https://www.youtube.com/@TrailBlonay-St-Legier" target="_blank"
+               class="text-white-600 hover:text-red-500">
                 <i class="fab fa-youtube text-xl"></i>
             </a>
-            <a href="https://www.instagram.com/trailblonaystlegier/" target="_blank" class="text-white-600 hover:text-pink-600">
+            <a href="https://www.instagram.com/trailblonaystlegier/" target="_blank"
+               class="text-white-600 hover:text-pink-600">
                 <i class="fab fa-instagram text-xl"></i>
             </a>
         </div>
